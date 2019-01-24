@@ -25,8 +25,17 @@ var menu = [
 	},
 	{
 		name : 'Equalize',
-		link : 'equalize.html',
-		submenu: [{
+		link : '',
+		submenu: [
+		{
+			name: 'kanbanboard',
+			link: 'kanbanboard.html'
+		},
+		{
+			name: 'equalize',
+			link: 'equalize.html'
+		},
+		{
 			name: 'Add equalize',
 			link: 'equalize_add.html'
 		},
@@ -34,6 +43,7 @@ var menu = [
 			name: 'Edit equalize',
 			link: 'equalize_edit.html'
 		}
+
 		]
 	},
 		{
