@@ -260,7 +260,7 @@
           var timestart = "2019-01-31 08:00:00"
           var d1 =new Date(timestart);
           d2 = new Date ( d1 );
-          d2.setMinutes ( d2.getMinutes() + 30*(index+1) );
+          d2.setMinutes ( d2.getMinutes() + 15*(index+1) );
 
           var mn = ""; var hr = ""; var m = ""; var d = "";
           if(d2.getMinutes().toString().length < 2){ mn = '0'; };
@@ -278,20 +278,6 @@
         }
       }
     });
-
-    // function plustimes() {
-    //   var timestart = "2019-01-31 08:00:00"
-    //   var datetime =new Date(timestart);
-    //   datetime.setMinutes(datetime.getMinutes()+30);
-    //   return datetime;
-    // }
-  
-
-// var d1 = new Date (),
-//     d2 = new Date ( d1 );
-// d2.setMinutes ( d1.getMinutes() + 30 );
-// alert ( d2 );
-
 
   </script>
 </body>
