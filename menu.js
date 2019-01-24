@@ -59,6 +59,10 @@ var menu = [
 		{
 			name: 'Scan work',
 			link: 'work.html'
+		},
+		{
+			name: 'Scan',
+			link: 'scan.html'
 		}
 		]
 	},
@@ -87,7 +91,36 @@ var menu = [
 			link: 'requestcar_add.html'
 		}
 		]
-	}
+	},
+	{
+		name : 'Master data',
+		link : '',
+		submenu: [{
+			name: 'List Supplier',
+			link: 'supplier.html'
+		},
+		{
+			name: 'Add Supplier',
+			link: 'supplier_add.html'
+		},
+		{
+			name: 'List Company',
+			link: 'company.html'
+		},
+		{
+			name: 'Add Company',
+			link: 'company_add.html'
+		},
+		{
+			name: 'List Line',
+			link: 'line.html'
+		},
+		{
+			name: 'Add Line',
+			link: 'line_add.html'
+		}
+		]
+	},
 ];
 var data = "";
 
