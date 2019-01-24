@@ -120,7 +120,7 @@
                 <div class="column task">
                   <heading>Task</heading>
                   <div class="row">
-                    <div class="col-md-6" v-for="item in items">
+                    <div class="col-md-6" v-for="(item,index) in items">
                       <div class="job">
                         <div class="top">
                           <a href="#" class="close"></a>
@@ -130,7 +130,7 @@
                             <div class="col-md-8"><img src="assets/img/kanban.JPG" /></div>
                           </div>
                         <hr/>
-                        <time>2019-01-31 08:00</time>
+                        <time>{{plustime(index)}}</time>
                       </div>
                     </div>
                   </div>
@@ -139,7 +139,7 @@
                 <div class="column ready">
                   <heading>Delay</heading>
                   <div class="row">
-                    <div class="col-md-6" v-for="delay in delays">
+                    <div class="col-md-6" v-for="(delay,index) in delays">
                       <div class="job">
                         <div class="top">
                           <a href="#" class="close"></a>
@@ -149,7 +149,7 @@
                             <div class="col-md-8"><img src="assets/img/kanban.JPG" /></div>
                           </div>
                         <hr/>
-                        <time>2019-01-31 08:00</time>
+                        <time>{{plustime(index)}}</time>
                       </div>
                     </div>
                   </div>
@@ -159,7 +159,7 @@
                 <div class="column done">
                   <heading>Success</heading>
                   <div class="row">
-                    <div class="col-md-6" v-for="success in successes">
+                    <div class="col-md-6" v-for="(success,index) in successes">
                       <div class="job">
                         <div class="top">
                           <a href="#" class="close"></a>
@@ -169,11 +169,9 @@
                           <div class="col-md-8"><img src="assets/img/kanban.JPG" /></div>
                         </div>
                         <hr/>
-                        <time v-bind:id="donesuccess">plustime('2019-01-31 08:00:00',{{success}})</time>
+                        <time>{{plustime(index)}}</time>
                       </div>
                     </div>
-                    <hr/>
-                    <time>{{plustime}}</time>
                   </div>
                 </div><!-- column -->
 
@@ -253,23 +251,29 @@
     let app = new Vue({
       el:"#board",
       data:{
-        items:[1,2,3,4,5,6],
+        items:[1,2,3,4,5,6,7,8,9,10,11,12],
         delays:[1,2],
-        successes:[1,2,3,4]
+        successes:[1,2,3,4,5,6,7,8]
       },
-      computed: {
-        plustime: function() {
+      methods: {
+        plustime(index){
           var timestart = "2019-01-31 08:00:00"
           var d1 =new Date(timestart);
           d2 = new Date ( d1 );
-          d2.setMinutes ( d2.getMinutes() + 30 );
-          // datetime.setMinutes(datetime.getMinutes()+30);
+          d2.setMinutes ( d2.getMinutes() + 30*(index+1) );
+
+          var mn = ""; var hr = ""; var m = ""; var d = "";
+          if(d2.getMinutes().toString().length < 2){ mn = '0'; };
+          if(d2.getHours().toString().length < 2){ hr = '0'; };
+          if(d2.getMonth().toString().length < 2){ m = '0'; };
+          if(d2.getDate().toString().length < 2){ d = '0'; };
+
           var datetime = 
-                + d2.getFullYear() + "-" 
-                + (d2.getMonth()+1)  + "-" 
-                + d2.getDate() + " "
-                + d2.getHours() + ":"  
-                + d2.getMinutes();
+                + d2.getFullYear().toString() + "-" 
+                + m + (d2.getMonth()+1).toString()  + "-" 
+                + d + d2.getDate().toString() + " "
+                + hr + d2.getHours().toString() + ":"  
+                + mn + d2.getMinutes().toString();
           return datetime;
         }
       }
