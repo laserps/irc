@@ -36,7 +36,7 @@ var menu = [
 		},
 		{
 			name: 'List Equalize',
-			link: 'equalize.html'
+			link: 'equalize-list.html'
 		},
 		{
 			name: 'Add equalize',
