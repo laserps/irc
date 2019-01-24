@@ -66,3 +66,12 @@
 .close:hover {
   opacity: 1;
 }
+.kanban-edit , .kanban-edit:hover , .kanban-edit:focus {
+  color: #000;
+}
+.modal-backdrop {
+    z-index: 1071;
+}
+.modal {
+    z-index: 5000;
+}
