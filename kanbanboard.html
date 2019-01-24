@@ -19,6 +19,7 @@
   <link href="assets/css/font-awesome.min.css" rel="stylesheet">
   <link href="assets/css/font-muli.css" rel="stylesheet" type="text/css">
   <link href="assets/css/custom.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css">
   <link href="assets/css/themify-icons.css" rel="stylesheet">
 </head>
 
@@ -90,17 +91,198 @@
           <div class="card">
             <div class="content">
               <div class="row">
-                <div class="col-md-6">
-                   <div class="form-group row">
-                    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
-                    <div class="col-sm-10">
-                      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                <div class="col-3">
+                    <div class="form-group row">
+                      <label class="col-sm-4 col-form-label">order no</label>
+                      <div class="col-sm-8">
+                        <select class="form-control">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
                     </div>
-                  </div>
                 </div>
               </div>
               <hr>
+              <div id="board">
 
+                <div class="column task">
+                  <heading>Task</heading>
+                  <div class="job">
+                    <div class="top">
+                      <a href="#" class="close"></a>
+                    </div>
+                    <div class="mt-3">
+                      <img src="assets/img/kanban.JPG" class="w-100" />
+                    </div>
+                    <hr/>
+                    <time>2008-02-14 20:00</time>
+                  </div>
+                  <div class="job">
+                    <div class="top">
+                      <a href="#" class="close"></a>
+                    </div>
+                    <div class="mt-3">
+                      <img src="assets/img/kanban.JPG" class="w-100" />
+                    </div>
+                    <hr/>
+                    <time>2008-02-14 20:00</time>
+                  </div>
+                  <div class="job">
+                    <div class="top">
+                      <a href="#" class="close"></a>
+                    </div>
+                    <div class="mt-3">
+                      <img src="assets/img/kanban.JPG" class="w-100" />
+                    </div>
+                    <hr/>
+                    <time>2008-02-14 20:00</time>
+                  </div>
+                </div><!-- column -->
+
+                <div class="column ready">
+                  <heading>Delay</heading>
+                  <div class="job">
+                    <div class="top">
+                      <a href="#" class="close"></a>
+                    </div>
+                    <div class="mt-3">
+                      <img src="assets/img/kanban.JPG" class="w-100" />
+                    </div>
+                    <hr/>
+                    <time>2008-02-14 20:00</time>
+                  </div>
+                  <div class="job">
+                    <div class="top">
+                      <a href="#" class="close"></a>
+                    </div>
+                    <div class="mt-3">
+                      <img src="assets/img/kanban.JPG" class="w-100" />
+                    </div>
+                    <hr/>
+                    <time>2008-02-14 20:00</time>
+                  </div>
+                  <div class="job">
+                    <div class="top">
+                      <a href="#" class="close"></a>
+                    </div>
+                    <div class="mt-3">
+                      <img src="assets/img/kanban.JPG" class="w-100" />
+                    </div>
+                    <hr/>
+                    <time>2008-02-14 20:00</time>
+                  </div>
+                </div><!-- column -->
+
+
+                <div class="column done">
+                  <heading>Success</heading>
+                  <div class="job">
+                    <div class="top">
+                      <a href="#" class="close"></a>
+                    </div>
+                    <div class="mt-3">
+                      <img src="assets/img/kanban.JPG" class="w-100" />
+                    </div>
+                    <hr/>
+                    <time>2008-02-14 20:00</time>
+                  </div>
+                  <div class="job">
+                    <div class="top">
+                      <a href="#" class="close"></a>
+                    </div>
+                    <div class="mt-3">
+                      <img src="assets/img/kanban.JPG" class="w-100" />
+                    </div>
+                    <hr/>
+                    <time>2008-02-14 20:00</time>
+                  </div>
+                  <div class="job">
+                    <div class="top">
+                      <a href="#" class="close"></a>
+                    </div>
+                    <div class="mt-3">
+                      <img src="assets/img/kanban.JPG" class="w-100" />
+                    </div>
+                    <hr/>
+                    <time>2008-02-14 20:00</time>
+                  </div>
+                </div><!-- column -->
+
+              </div>
+              <!-- <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="card p-2">
+                    <div class="card-header px-0 py-0" style="background-color: #2196F3;">
+                        <h4 class="mt-3 text-center text-white">Task</h4>
+                    </div>
+                    <div class="card-body p-2" style="border: 3px solid #2196F3;">
+                      <div class="qr-code mb-3">
+                        <img src="assets/img/kanban2.JPG" class="w-100" />
+                      </div>
+                      <div class="qr-code mb-3">
+                        <img src="assets/img/kanban2.JPG" class="w-100" />
+                      </div>
+                      <div class="qr-code mb-3">
+                        <img src="assets/img/kanban2.JPG" class="w-100" />
+                      </div>
+                      <div class="qr-code mb-3">
+                        <img src="assets/img/kanban2.JPG" class="w-100" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="card p-2">
+                    <div class="card-header px-0 py-0" style="background-color: #FF5722;">
+                        <h4 class="mt-3 text-center text-white">Delay</h4>
+                    </div>
+                    <div class="card-body p-2" style="border: 3px solid #FF5722;">
+                      <div class="qr-code mb-3">
+                        <img src="assets/img/kanban2.JPG" class="w-100" />
+                      </div>
+                      <div class="qr-code mb-3">
+                        <img src="assets/img/kanban2.JPG" class="w-100" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="card p-2">
+                    <div class="card-header px-0 py-0" style="background-color: #4CAF50;">
+                        <h4 class="mt-3 text-center text-white">Success</h4>
+                    </div>
+                    <div class="card-body p-2" style="border: 3px solid #4CAF50;">
+                      <div class="qr-code mb-3">
+                        <img src="assets/img/kanban2.JPG" class="w-100" />
+                      </div>
+                      <div class="qr-code mb-3">
+                        <img src="assets/img/kanban2.JPG" class="w-100" />
+                      </div>
+                      <div class="qr-code mb-3">
+                        <img src="assets/img/kanban2.JPG" class="w-100" />
+                      </div>
+                      <div class="qr-code mb-3">
+                        <img src="assets/img/kanban2.JPG" class="w-100" />
+                      </div>
+                      <div class="qr-code mb-3">
+                        <img src="assets/img/kanban2.JPG" class="w-100" />
+                      </div>
+                      <div class="qr-code mb-3">
+                        <img src="assets/img/kanban2.JPG" class="w-100" />
+                      </div>
+                      <div class="qr-code mb-3">
+                        <img src="assets/img/kanban2.JPG" class="w-100" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
             </div>
           </div>
         </div>
