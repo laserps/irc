@@ -247,6 +247,10 @@ a {
 }
 
 
+.text-large {
+    font-size: large;
+}
+
 @media (max-width: 414px){
 	.footer .copyright {
 	    width: 90%;
