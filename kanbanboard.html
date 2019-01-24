@@ -151,7 +151,7 @@
                       <div class="col-md-8"><img src="assets/img/kanban.JPG" /></div>
                     </div>
                     <hr/>
-                    <time v-bind:id="donesuccess">plustime('2019-01-31 08:00:00',{{success}})</time>
+                    <time>{{plustime}}</time>
                   </div>
                 </div><!-- column -->
 
@@ -227,22 +227,46 @@
   <script src="assets/js/bootstrap-checkbox-radio-switch-tags.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>
   <script>
+
     let app = new Vue({
       el:"#board",
       data:{
         items:[1,2,3,4,5,6],
         delays:[1,2],
         successes:[1,2,3,4]
+      },
+      computed: {
+        plustime: function() {
+          var timestart = "2019-01-31 08:00:00"
+          var d1 =new Date(timestart);
+          d2 = new Date ( d1 );
+          d2.setMinutes ( d2.getMinutes() + 30 );
+          // datetime.setMinutes(datetime.getMinutes()+30);
+          var datetime = 
+                + d2.getFullYear() + "-" 
+                + (d2.getMonth()+1)  + "-" 
+                + d2.getDate() + " "
+                + d2.getHours() + ":"  
+                + d2.getMinutes();
+          return datetime;
+        }
       }
     });
 
-    function plustime(timestart,value) {
-      var datetime =new Date(timestart);
-      datetime.setMinutes(datetime.getMinutes()+value);
-      // document.getElementById("demo").innerHTML = datetime;
+    // function plustimes() {
+    //   var timestart = "2019-01-31 08:00:00"
+    //   var datetime =new Date(timestart);
+    //   datetime.setMinutes(datetime.getMinutes()+30);
+    //   return datetime;
+    // }
+  
 
-      return datetime;
-    }
+// var d1 = new Date (),
+//     d2 = new Date ( d1 );
+// d2.setMinutes ( d1.getMinutes() + 30 );
+// alert ( d2 );
+
+
   </script>
 </body>
 
