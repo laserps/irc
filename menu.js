@@ -8,8 +8,12 @@ var menu = [
 	},
 	{
 		name : 'Order',
-		link : 'order.html',
+		link : '',
 		submenu: [{
+			name: 'List Order',
+			link: 'order.html'
+		},
+		{
 			name: 'Import file',
 			link: 'order_file.html'
 		},
@@ -26,13 +30,12 @@ var menu = [
 	{
 		name : 'Equalize',
 		link : '',
-		submenu: [
-		{
+		submenu: [{
 			name: 'kanbanboard',
 			link: 'kanbanboard.html'
 		},
 		{
-			name: 'equalize',
+			name: 'List Equalize',
 			link: 'equalize.html'
 		},
 		{
@@ -48,8 +51,12 @@ var menu = [
 	},
 		{
 		name : 'Work',
-		link : 'work_list.html',
+		link : '',
 		submenu: [{
+			name: 'List Work',
+			link: 'work_list.html'
+		},
+		{
 			name: 'Scan work',
 			link: 'work.html'
 		}
@@ -57,8 +64,12 @@ var menu = [
 	},
 	{
 		name : 'Delivery Plan',
-		link : 'deliveryplan.html',
+		link : '',
 		submenu: [{
+			name: 'List Delivery plan',
+			link: 'deliveryplan.html'
+		},
+		{
 			name: 'Add deliveryplan',
 			link: 'deliveryplan_add.html'
 		}
@@ -66,8 +77,12 @@ var menu = [
 	},
 	{
 		name : 'Request of car',
-		link : 'requestcar.html',
+		link : '',
 		submenu: [{
+			name: 'List Request of car',
+			link: 'requestcar.html'
+		},
+		{
 			name: 'Add request of car',
 			link: 'requestcar_add.html'
 		}
