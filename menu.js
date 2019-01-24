@@ -112,6 +112,14 @@ var menu = [
 			link: 'company_add.html'
 		},
 		{
+			name: 'List Product',
+			link: 'product.html'
+		},
+		{
+			name: 'Add Product',
+			link: 'product_add.html'
+		},
+		{
 			name: 'List Line work',
 			link: 'line.html'
 		},
