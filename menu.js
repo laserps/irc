@@ -35,10 +35,6 @@ var menu = [
 			link: 'kanbanboard.html'
 		},
 		{
-			name: 'Equalize',
-			link: 'equalize.html'
-		},
-		{
 			name: 'List Equalize',
 			link: 'equalize-list.html'
 		},
