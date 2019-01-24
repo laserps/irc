@@ -91,16 +91,24 @@
           <div class="card">
             <div class="content">
               <div class="row">
-                <div class="col-3">
+                <div class="col-2">
                     <div class="form-group row">
                       <label class="col-sm-4 col-form-label">order no</label>
                       <div class="col-sm-8">
                         <select class="form-control">
                           <option>1</option>
                           <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                          <option>5</option>
+                        </select>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="form-group row">
+                      <label class="col-sm-4 col-form-label">company</label>
+                      <div class="col-sm-8">
+                        <select class="form-control">
+                          <option>1</option>
+                          <option>2</option>
                         </select>
                       </div>
                     </div>
@@ -111,47 +119,59 @@
 
                 <div class="column task">
                   <heading>Task</heading>
-                  <div class="job" v-for="item in items">
-                    <div class="top">
-                      <a href="#" class="close"></a>
-                    </div>
-                    <div class="row mt-2">
-                        <div class="col-md-4"><img src="assets/img/qr-code-sample.jpg"/></div>
-                        <div class="col-md-8"><img src="assets/img/kanban.JPG" /></div>
+                  <div class="row">
+                    <div class="col-md-6" v-for="item in items">
+                      <div class="job">
+                        <div class="top">
+                          <a href="#" class="close"></a>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-4"><img src="assets/img/qr-code-sample.jpg"/></div>
+                            <div class="col-md-8"><img src="assets/img/kanban.JPG" /></div>
+                          </div>
+                        <hr/>
+                        <time>2019-01-31 08:00</time>
                       </div>
-                    <hr/>
-                    <time>2019-01-31 08:00</time>
+                    </div>
                   </div>
                 </div><!-- column -->
 
                 <div class="column ready">
                   <heading>Delay</heading>
-                  <div class="job" v-for="delay in delays">
-                    <div class="top">
-                      <a href="#" class="close"></a>
-                    </div>
-                    <div class="row mt-2">
-                        <div class="col-md-4"><img src="assets/img/qr-code-sample.jpg"/></div>
-                        <div class="col-md-8"><img src="assets/img/kanban.JPG" /></div>
+                  <div class="row">
+                    <div class="col-md-6" v-for="delay in delays">
+                      <div class="job">
+                        <div class="top">
+                          <a href="#" class="close"></a>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-4"><img src="assets/img/qr-code-sample.jpg"/></div>
+                            <div class="col-md-8"><img src="assets/img/kanban.JPG" /></div>
+                          </div>
+                        <hr/>
+                        <time>2019-01-31 08:00</time>
                       </div>
-                    <hr/>
-                    <time>2019-01-31 08:00</time>
+                    </div>
                   </div>
                 </div><!-- column -->
 
 
                 <div class="column done">
                   <heading>Success</heading>
-                  <div class="job" v-for="success in successes">
-                    <div class="top">
-                      <a href="#" class="close"></a>
+                  <div class="row">
+                    <div class="col-md-6" v-for="success in successes">
+                      <div class="job">
+                        <div class="top">
+                          <a href="#" class="close"></a>
+                        </div>
+                        <div class="row mt-2">
+                          <div class="col-md-4"><img src="assets/img/qr-code-sample.jpg"/></div>
+                          <div class="col-md-8"><img src="assets/img/kanban.JPG" /></div>
+                        </div>
+                        <hr/>
+                        <time v-bind:id="donesuccess">plustime('2019-01-31 08:00:00',{{success}})</time>
+                      </div>
                     </div>
-                    <div class="row mt-2">
-                      <div class="col-md-4"><img src="assets/img/qr-code-sample.jpg"/></div>
-                      <div class="col-md-8"><img src="assets/img/kanban.JPG" /></div>
-                    </div>
-                    <hr/>
-                    <time v-bind:id="donesuccess">plustime('2019-01-31 08:00:00',{{success}})</time>
                   </div>
                 </div><!-- column -->
 
