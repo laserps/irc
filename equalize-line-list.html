@@ -90,16 +90,34 @@
           <div class="card">
             <div class="content">
               <div class="row">
-                <div class="col-md-6">
-                  <p class="lead">Work</p>
-                </div>
-                <div class="col-md-6 text-right">
-                  <a class="btn btn-success" href="work.html"> <i class="fa fa-qrcode"></i> Scan work</a>
+                <div class="col-md-12">
+                  <p class="lead">Line work board</p>
                 </div>
               </div>
               <hr>
               <div id="datatables_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4">
-                <br>
+                <div class="row">
+                  <div class="col-md-3 text-right"> Line work. </div>
+                  <div class="col-md-3">
+                    <select class="form-control">
+                      <option value="Line work">CV</option>
+                      <option value="เพลส">เพลส</option>
+                      <option value="ซับไพร์มเชน">ซับไพร์มเชน</option>
+                    </select>
+                  </div>
+                  <div class="col-md-2 text-right"> <br> Time line </div>
+                  <div class="col-md-3">
+                    <div class="card card-brown">
+                      <div class="content">
+                        <div class="row">
+                          <div class="col-sm-7 col-md-12">
+                            <div class="numbers text-center"> 09:00-09:15 </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <div class="row">
                   <div class=" col-md-6">
                     <div class="dataTables_length" id="datatables_length">
@@ -118,103 +136,129 @@
                     </div>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th>No.</th>
-                          <th class="text-center" contenteditable="true">QR CODE</th>
-                          <th>KANBAN DETAIL</th>
-                          <th>PO Dtl/WO</th>
-                          <th>QTY/Pack</th>
-                          <th>Pack</th>
-                          <th>Status Scan</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>1</td>
-                          <td class="text-center"> <img src="assets/img/qr-code-sample.jpg" width="150" height="150"></td>
-                          <td>
-                            <div class="col-md-8">
-                              <div class="row pb-2">
-                                <div class="col-md-12">
-                                  <h5 class="text-primary"> Line work : CV</h5>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-12">
-                                  <h5> KANBAN ID : 1388</h5>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-12">
-                                  <h5> PART NO. : 99226-80008-00</h5>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-12">
-                                  <h5> PART Name : P 326A CHL SOCKET COVER</h5>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-12">
-                                  <h5>QTY/Pack : 20</h5>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-12">
-                                  <h5> Pack : 6</h5>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-12">
-                                  <h5> Dlv Qty : 300 PCS</h5>
-                                </div>
-                              </div>
-                              <br>
-                            </div>
-                          </td>
-                          <td>1810339210</td>
-                          <td>20</td>
-                          <td>6</td>
-                          <td><small class="badge badge-success">Completed</small></td>
-                        </tr>
-                        <tr>
-                          <td>2</td>
-                          <td class="text-center"> <img src="assets/img/qr-code-sample.jpg" width="150" height="150"> </td>
-                          <td>1388</td>
-                          <td>1810339210</td>
-                          <td>20</td>
-                          <td>6</td>
-                          <td><small class="badge badge-success">Completed</small></td>
-                        </tr>
-                        <tr>
-                          <td>3</td>
-                          <td class="text-center"><img src="assets/img/qr-code-sample.jpg" width="150" height="150"> </td>
-                          <td>1388</td>
-                          <td>1810339210</td>
-                          <td>20</td>
-                          <td>6</td>
-                          <td><small class="badge badge-warning">Pending</small></td>
-                        </tr>
-                        <tr>
-                          <td>4</td>
-                          <td class="text-center"> <img src="assets/img/qr-code-sample.jpg" width="150" height="150"> </td>
-                          <td>1388</td>
-                          <td>1810339210</td>
-                          <td>20</td>
-                          <td>6</td>
-                          <td><small class="badge badge-danger">Delay</small></td>
-                        </tr>
-                        <tr>
-                          <td colspan="11"></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
+                <hr>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th rowspan="2">No.</th>
+                      <th rowspan="2"> Kanban ID </th>
+                      <th rowspan="2">QR Code</th>
+                    </tr>
+                    <tr>
+                      <th class="text-center"><small>Dock</small></th>
+                      <th>Part no. <br>Part name </th>
+                      <th class="text-center"><small>QTY/Pack</small></th>
+                      <th> Dlv Qty </th>
+                      <th class="text-center"><small>Status</small></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="">1</td>
+                      <td class="text-center"> 1388</td>
+                      <td> <img src="assets/img/qr-code-sample.jpg" width="100"> </td>
+                      <td class="text-center">D1</td>
+                      <td> 99226-80008-00/P <br> 326A CHL SOCKET COVER</td>
+                      <td class="text-center"> 20 </td>
+                      <td class="text-center"> 300 PCS </td>
+                      <td class="text-center"> <small class="badge badge-danger" style="width:100px; padding: 10px;"> Waiting </small></td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td class="text-center"> 1388</td>
+                      <td style=""><img src="assets/img/qr-code-sample.jpg" width="100"> </td>
+                      <td class="text-center">D1</td>
+                      <td> 99226-80008-00/P <br> 326A CHL SOCKET COVER</td>
+                      <td class="text-center"> 20 </td>
+                      <td class="text-center"> 300 PCS </td>
+                      <td class="text-center"> <small class="badge badge-warning" style="width:100px; padding: 10px;"> pending </small> </td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td class="text-center"> 1388</td>
+                      <td> <img src="assets/img/qr-code-sample.jpg" width="100"> </td>
+                      <td class="text-center">D1</td>
+                      <td> 99226-80008-00/P <br> 326A CHL SOCKET COVER</td>
+                      <td class="text-center"> 20 </td>
+                      <td class="text-center"> 300 PCS </td>
+                      <td class="text-center"><small class="badge badge-success" style="width:100px; padding: 10px;"> completed </small></td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td class="text-center"> 1388</td>
+                      <td> <img src="assets/img/qr-code-sample.jpg" width="100"> </td>
+                      <td class="text-center">D1</td>
+                      <td> 99226-80008-00/P <br> 326A CHL SOCKET COVER</td>
+                      <td class="text-center"> 20 </td>
+                      <td class="text-center"> 300 PCS </td>
+                      <td class="text-center"><small class="badge badge-danger" style="width:100px; padding: 10px;" draggable="true"> Waiting </small></td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td class="text-center"> 1388</td>
+                      <td> <img src="assets/img/qr-code-sample.jpg" width="100"> </td>
+                      <td class="text-center"> D1</td>
+                      <td> 99226-80008-00/P <br> 326A CHL SOCKET COVER</td>
+                      <td class="text-center"> 20 </td>
+                      <td class="text-center"> 300 PCS </td>
+                      <td class="text-center"><small class="badge badge-danger" style="width:100px; padding: 10px;"> Waiting </small></td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td class="text-center"> 1388</td>
+                      <td> <img src="assets/img/qr-code-sample.jpg" width="100"> </td>
+                      <td class="text-center"> D1</td>
+                      <td> 99226-80008-00/P <br> 326A CHL SOCKET COVER</td>
+                      <td class="text-center"> 20 </td>
+                      <td class="text-center"> 300 PCS </td>
+                      <td class="text-center"><small class="badge badge-warning" style="width:100px; padding: 10px;"> pending </small></td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td class="text-center"> 1388</td>
+                      <td> <img src="assets/img/qr-code-sample.jpg" width="100"> </td>
+                      <td class="text-center"> D1</td>
+                      <td> 99226-80008-00/P <br> 326A CHL SOCKET COVER</td>
+                      <td class="text-center"> 20 </td>
+                      <td class="text-center"> 300 PCS </td>
+                      <td class="text-center"><small class="badge badge-danger" style="width:100px; padding: 10px;"> Waiting </small></td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td class="text-center"> 1388</td>
+                      <td> <img src="assets/img/qr-code-sample.jpg" width="100"> </td>
+                      <td class="text-center"> D1</td>
+                      <td> 99226-80008-00/P <br> 326A CHL SOCKET COVER</td>
+                      <td class="text-center"> 20 </td>
+                      <td class="text-center"> 300 PCS </td>
+                      <td class="text-center"><small class="badge badge-success" style="width:100px; padding: 10px;"> completed </small></td>
+                    </tr>
+                    <tr>
+                      <td>9</td>
+                      <td class="text-center"> 1388</td>
+                      <td> <img src="assets/img/qr-code-sample.jpg" width="100"> </td>
+                      <td class="text-center"> D1</td>
+                      <td> 99226-80008-00/P <br> 326A CHL SOCKET COVER</td>
+                      <td class="text-center"> 20 </td>
+                      <td class="text-center"> 300 PCS </td>
+                      <td class="text-center"> <small class="badge badge-success" style="width:100px; padding: 10px;"> completed </small> </td>
+                    </tr>
+                    <tr>
+                      <td>10</td>
+                      <td class="text-center"> 1388</td>
+                      <td> <img src="assets/img/qr-code-sample.jpg" width="100"> </td>
+                      <td class="text-center"> D1</td>
+                      <td> 99226-80008-00/P <br> 326A CHL SOCKET COVER</td>
+                      <td class="text-center"> 20 </td>
+                      <td class="text-center"> 300 PCS </td>
+                      <td class="text-center"><small class="badge badge-danger" style="width:100px; padding: 10px;"> Waiting </small></td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td colspan="13"></td>
+                    </tr>
+                  </tbody>
+                </table>
                 <div class="row">
                   <div class="col-sm-12 col-md-5">
                     <div class="dataTables_info" id="datatables_info" role="status" aria-live="polite">Showing 1 to 10 of 40 entries</div>
@@ -272,9 +316,9 @@
       </div>
     </div>
   </div>
-  <script style="">
-    var main_menu = "order.html";
-    var current_page = "work_list.html";
+  <script>
+    var main_menu = "equalize.html";
+    var current_page = "equalize.html";
   </script>
   <!--   Core JS Files   -->
   <script src="assets/vendors/jquery-3.1.1.min.js" type="text/javascript"></script>

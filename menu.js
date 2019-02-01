@@ -32,7 +32,7 @@ var menu = [
 		link : '',
 		submenu: [{
 			name: 'kanbanboard',
-			link: 'kanbanboard.html'
+			link: 'kanbanboard2.html'
 		},
 		{
 			name: 'List Equalize',
