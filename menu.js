@@ -4,13 +4,15 @@ var menu = [
 	
 	{
 		name : 'Dashboard',
-		link : 'index.html',	
+		link : 'index.html',
+		icon: 'ti-home',	
 	},
 	{
-		name : 'Order',
+		name : 'Customer',
 		link : '',
+		icon: 'ti-user',
 		submenu: [{
-			name: 'List Order',
+			name: 'List customer',
 			link: 'order.html'
 		},
 		{
@@ -22,7 +24,7 @@ var menu = [
 			link: 'order_manual.html'
 		},
 		{
-			name: 'View order',
+			name: 'View customer',
 			link: 'order_view.html'
 		}
 		]
@@ -30,6 +32,7 @@ var menu = [
 	{
 		name : 'Equalize',
 		link : '',
+		icon: 'ti-write',
 		submenu: [{
 			name: 'kanbanboard',
 			link: 'kanbanboard2.html'
@@ -52,19 +55,32 @@ var menu = [
 		{
 		name : 'Work',
 		link : '',
+		icon: 'ti-file',
 		submenu: [{
 			name: 'List Work',
 			link: 'work_list.html'
 		},
 		{
 			name: 'Scan work',
-			link: 'work.html'
+			link: 'work_user.html'
+		}
+		]
+	},
+	{
+		name : 'Zone',
+		link : '',
+		icon: 'ti-map-alt',
+		submenu: [
+		{
+			name: 'Scan Zone',
+			link: 'scan_zone.html'
 		}
 		]
 	},
 	{
 		name : 'Delivery Plan',
 		link : '',
+		icon: 'ti-truck',
 		submenu: [{
 			name: 'List Delivery plan',
 			link: 'deliveryplan.html'
@@ -78,6 +94,7 @@ var menu = [
 	{
 		name : 'Request of car',
 		link : '',
+		icon: 'ti-notepad',
 		submenu: [{
 			name: 'List Request of car',
 			link: 'requestcar.html'
@@ -91,6 +108,7 @@ var menu = [
 	{
 		name : 'Master data',
 		link : '',
+		icon: 'ti-folder',
 		submenu: [{
 			name: 'List Supplier',
 			link: 'supplier.html'
@@ -122,6 +140,14 @@ var menu = [
 		{
 			name: 'Add Line work',
 			link: 'line_add.html'
+		},
+		{
+			name: 'List Zone',
+			link: 'customer.html'
+		},
+		{
+			name: 'Add Zone',
+			link: 'customer_add.html'
 		}
 		]
 	}
